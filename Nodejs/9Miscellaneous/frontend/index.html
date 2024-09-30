@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET and POST request</title>
+</head>
+
+<body>
+<h1>GET request form</h1>
+
+<!-- jb hum get ka use krte hai toh hamari sari information search bar m show hoti hai  -->
+    <form method="get" action="http://localhost:8080/register">
+        <input type="text" name="user" placeholder="enter username">
+        <input type="password" name="password" placeholder="enter password">
+        <button>submit</button>
+    </form>
+   
+    <hr style="background-color: black; height: 5px; margin-top: 30px;">
+    
+    
+    <!-- jb hum get ka use krte hai toh hamari sari information search bar m show nhi  hoti hai  -->
+    <h1>POST request form</h1>
+    <form method="post" action="http://localhost:8080/register">
+        <input type="text" name="user" placeholder="enter username">
+        <input type="password" name="password" placeholder="enter password">
+        <button>submit</button>
+    </form>
+
+
+</body>
+
+</html>

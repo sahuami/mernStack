@@ -1,0 +1,112 @@
+ body {
+     background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg);
+     color: white;
+     overflow: hidden;
+ }
+
+
+ .App>h1 {
+     margin-top: 2em;
+     text-align: center;
+     color: black;
+     font-size: 40px;
+     font-weight: bold;
+     color: #301402f7;
+ }
+
+ .todo-wrapper {
+     background: #5e3e29b5;
+     
+     padding: 2%;
+     width: fit-content;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5%;
+     max-height: 80vh;
+     overflow-y: auto;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     border-radius: 1em;
+     border: 1px solid;
+
+ }
+
+ .todo-input {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-bottom: 1px solid white;
+     padding-bottom: 25px;
+     margin-bottom: 25px;
+
+ }
+
+ .todo-input-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-right: 25px;
+
+ }
+
+ .todo-input-item label {
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ .todo-input-item input {
+     padding: 10px;
+     border: none;
+     width: 20em;
+     border-radius: 5px;
+ }
+
+ .primaryBtn {
+     background-color: rgb(73, 42, 42);
+     color: aliceblue;
+     border: none;
+     border-radius: 5px;
+     padding: 6px;
+     cursor: pointer;
+     font-weight: bold;
+     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+ }
+
+ .primaryBtn:hover {
+     color: rgb(14, 6, 6);
+     background-color: rgb(220, 227, 234);
+
+ }
+
+ .secondaryBtn {
+     background-color: rgb(140, 104, 104);
+     color: aliceblue;
+     border: none;
+     border-radius: 5px;
+     padding: 6px;
+     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+     cursor: pointer;
+     margin: 5px;
+     font-weight: bold;
+
+
+ }
+
+ .active {
+     background-color: rgb(73, 42, 42);
+ }
+
+ .todo-list {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .btn-area {
+     margin-bottom: 1em;
+ }
+
+ .todo-list-item {
+     background-color: #5E3E36;
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+ }

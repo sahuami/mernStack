@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dice gave value:
+        <!-- <%= Math.floor(Math.random()* 6) + 1 %> -->
+        <%= diceval %>
+
+        <!-- agar hame koi condition lagani hai toh ejs ke dusre tag ka use karege jo loops or condition statement ke liye use kiya jata hai or iske an dar ka statement tabhi print hota jb ye condition true ho gi -->
+        <% if(diceval== 6) { %>
+            <h2>Nice! Roll dice again</h2> 
+            <% } %>
+
+    </h1>
+    <%- include("includes/footer.ejs") %>
+
+</body>
+</html>
