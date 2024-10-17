@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Position: static/relative/absolute example</title>
+
+    <!-- Introduction of position:
+    The position property specifies the type of positioning method used for an element.
+    There are five different position values: static, relative, fixed, absolute, sticky
+    Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value. -->
+
+    <!--
+            1. Every html elements are in the flow of each other.
+        
+            2. every html element is having by default position property value as static (in which order, you're written in the html body in the same order they will be visible to the webpage).
+            -if position property's value is static then positions following properties will not work.
+            left, right, top, bottom, z-index
+            above properties will work for position's value like relative, absolute, fixed, and sticky. 
+            
+            static vs relative:
+            in the case static : left/right/top/bottom/z-index won't work but in case of relative all these properties work.
+            z-index: it only works when position value is anything instead of static
+            position as absolute: in this case element starts searchig its parent who has position value anything instead of static, if it doesn't find then by default its parent is body.
+            -->
+    <style>
+        #container {
+            border: 2px solid red;
+            padding: 20px;
+            position: sticky;
+            
+        }
+
+        #container>div {
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container>div:nth-child(1) {
+            background-color: red;
+            position: relative;
+            left: 80px;
+            top: 40px;
+            z-index: -1;
+        }
+
+        #container>div:nth-child(2) {
+            background-color: yellow;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+
+        }
+
+        #container>div:nth-child(3) {
+            background-color: lime;
+            /* default value position: static; */
+            position: static;
+            left: 200px;
+            top: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div>1.relative</div>
+        <div>2.absolute</div>
+        <div>3.static</div>
+    </div>
+
+</body>
+
+</html>

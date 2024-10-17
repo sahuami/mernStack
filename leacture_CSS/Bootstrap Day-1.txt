@@ -1,0 +1,385 @@
+  Component Libraries for Web Design
+               =============================
+-  A component means  a web template that contains
+        a) presentation
+        b) styles
+        b) logic
+- Presentation is designed in HTML
+- Styles are defined with CSS.
+- Logic by using script [JavaScript, TypeScript]
+- There are various component libraries for web development
+
+        a) Bootstrap
+        b) Twitter Bootstrap
+        c) React Material
+        d) Angular Material
+        e) Telerik
+        f) DevExpress
+        g) jQuery UI  etc..
+
+
+                      Bootstrap
+                      =======
+- It is a component library.
+- It is free and open source.
+- It is cross platform
+- It also provide premium service.
+        "www.getbootstrap.com;
+- It provides
+        a) HTML code snippets        [presentation]
+        b) CSS classes               [styles]
+        c) jQuery Attributes         [functionality]
+
+
+        <div class="btn btn-primary" data-bs-toggle="">
+       
+        </div>        
+
+
+Setup Environment for Bootstrap in Project
+=================================
+1. Install Bootstrap CSS
+        > npm install bootstrap  --save
+
+2. Install Bootstrap Icons
+        > npm install bootstrap-icons --save
+
+3. Install jQuery
+        > npm install jquery --save
+
+
+To use bootstrap and all its components in Web Page:
+ - Link the following style sheets in head section
+        - bootstrap.css
+        - bootstrap-icons.css
+
+ - Link the following scripts in body section
+        - jquery.js
+        - bootstrap.bundle.js
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Demo</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body>
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Demo</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body>
+	<h2 class="bg-danger border border-4 border-white text-center text-white p-3 rounded rounded-4">Bootstrap</h2>
+	<p>UI Design Components</p>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
+
+Note: CSS files have no order dependency.
+          JavaScript files have order dependency.
+          Bootstrap uses a font called "Roboto"
+
+
+
+                    Bootstrap Layout
+                   ==============
+1. Containers
+        .container
+        .container-sm
+        .container-lg
+        .container-xl
+        .container-md
+        .container-fluid
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Demo</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	<style>
+	.container-fluid{
+		border:2px solid red;
+	}
+	</style>
+    </head>
+    <body class="container-fluid">
+	<h2>Bootstrap</h2>
+	<p>UI Design Components</p>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
+
+2. Box Model
+
+        Margins
+        =======
+        .m        margin
+         {s}        left
+         {e}        right
+         {t}        top
+         {b}        bottom
+
+        .ms
+        .me
+        .mt
+        .mb
+
+        -{1 to 4}
+
+        .ms-4
+        .mt-4
+        .mb-3
+
+	<h2 class="mt-2 mb-4 ms-4">Bootstrap</h2>
+	<p class="ms-4">UI Design Components</p>
+
+        Padding
+        ======
+        .p
+        .p{s,e,t,b}
+        .p{s,e,t,b}-{1 to 4}
+
+        .pt-2
+	<h2 class="mt-2 mb-4 ms-4">Bootstrap</h2>
+	<p class="ms-4 ps-4 pt-4 pb-3 border border-primary ">UI Design Components</p>
+
+We are learning Bootstrap-5
+Previous Version is Bootstrap-4
+
+
+                 Bootstrap Box Model Classes
+                 =======================
+
+Margins:
+        .m{sides}-{size}
+
+        sides        : s [left]   e [right]   t [top]   b [bottom]
+
+        size        : 1 to 4
+
+        ms-1
+        me-2
+        mt-3
+        mb-4
+
+
+Padding:
+        .p{sides}-{size}
+
+        .ps-1
+        .pe-2
+        .pt-3
+        .pb-4
+
+
+Border:
+        .border
+        .border-{size}   1 to 4
+        .border-{contextual}  [primary, secondary, danger, success
+                         warning, info, dark, light]
+       
+Rounded:
+        .rounded
+        .rounded-{size} 1 to 3
+        .rounded-pill
+        .rounded-circle
+
+Syntax:
+ <img class="border border-4 p-2 border-danger rounded rounded-pill" src="../public/images/banner.jpg" width="100%">
+
+ <p class="border border-4 p-2 border-danger rounded rounded-pill">
+content.......
+</p>
+
+
+Width and Height:
+        .w-{size}        25, 50, 75, 100
+        .h-{size}        25, 50, 75, 100
+
+Syntax:
+        <button  class="w-100">
+<img class="border border-4 w-25 p-2 border-danger rounded rounded-pill" src="../public/images/banner.jpg" >
+
+
+                          Position Classes
+                          ==============
+.position-static
+.position-relative
+.position-absolute
+.position-fixed
+.position-sticky
+
+.top-{0, 50, 100}
+.bottom-
+.end-
+.start-
+
+Syntax:
+<img class="position-fixed end-0 bottom-0" src="../public/images/jacket.jpg" width="50" height="50">
+
+<p></p>
+<p></p>
+<p></p>
+<h2 class="position-sticky top-0">Home | About | Contact</h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+
+                      Float Class
+                      =========
+.float-start
+.float-end
+
+                       
+<img class="float-end" src="../public/images/jacket.jpg" width="199" height="200">
+
+
+                     Display Class
+                     ===========
+.d-{option}
+.d-flex
+.d-none
+.d-inline
+.d-block
+
+Grid is defined by using
+.row
+.col {flexible}
+.col-{size}  1 to 12
+
+Flex Class
+.flex-wrap
+.flex-row
+.flex-column
+.flex-row-reverse
+.flex-column-reverse
+
+Flex Alignment
+.justify-content-center
+.justify-content-between
+.justify-content-around
+.align-items-center
+.align-items-top
+.align-items-bottom
+
+EX: Center Page
+
+<div style="height: 600px;" class="d-flex justify-content-center align-items-center">
+            <img src="../public/images/jacket.jpg" width="199" height="200">
+ </div>
+
+Ex: Grids in row and columns
+
+ <dl class="row">
+            <dt class="col-3">Name</dt>
+            <dd class="col-9">Samsung TV</dd>
+            <dt class="col-3">Price</dt>
+            <dd class="col-9">56000.44</dd>
+            <dt class="col-3">Stock</dt>
+            <dd class="col-9">Available</dd>
+        </dl>
+
+Ex: Grid Layout
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Demo</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   
+    </head>
+    <body class="container-fluid">
+        <header>
+            <h1>Amazon Shopping</h1>
+        </header>
+        <section class="row" style="height: 400px;">
+            <nav class="col-2">
+                navigation
+            </nav>
+            <main class="col-8">
+                main..
+            </main>
+            <aside class="col-2">
+                ads..
+            </aside>
+        </section>
+        <footer>
+            &copy; copyright 2022
+        </footer>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
+
+Ex: Multiple Rows and Columns
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Demo</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   
+    </head>
+    <body class="container-fluid">
+        <div class="row border border-dark">
+            <div class="col text-center">Single Column</div>
+        </div>
+        <div class="row mt-2">
+            <div class="col border border-dark">
+                even col-1
+            </div>
+            <div class="col border border-danger">
+                even col-2
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 border border-danger">
+                 col-3
+            </div>
+            <div class="col-7 border border-danger">
+                col-7
+            </div>
+            <div class="col-2 border border-danger">
+                col-2
+            </div>
+        </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
+
+                     Text Colors
+                     =========
+.text-{contextual}  
+
+                      Background Colors
+                      ===============
+.bg-{contextual}
+
+                      Text Alignments
+                       ============
+.text-start
+.text-end
+.text-center
+.text-justify

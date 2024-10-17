@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>box model</title>
+</head>
+
+<body>
+    <h1>Div Element Example</h1>
+    <!--
+       1. div element is used to create container or boxes in html.
+       2. div is non semantic element of html
+
+       3. to create a box: 
+        width
+        height
+        border
+    -->
+    <!-- border property
+    -using border property, you can give border around the element
+    long way: 
+    border-left: thickness style color
+    Example: border-left: 1px solid red
+    ---
+    border-right: thickness style color
+    Example: border-right: 1px dashed teal
+    ---
+    border-top: thickness style color
+    Example: border-top: 2px dotted lime
+    ----
+    border-bottom: thickness style color
+    Example: border-bottom: 2px solid green
+
+    shortcut: 
+    border: thickness style color
+    Example: border: 1px solid red
+    -->
+
+    <div style="
+    width:200px;
+    height: 200px;
+    border: 2px dotted red;
+    ">
+
+    </div>
+    <!-- <p>hello</p>
+    <span>hello</span> -->
+    <hr>
+    <hr>
+    <hr>
+
+    <h1>Block and Inline Element Example</h1>
+    <!--
+        Block Element: it blocks entire line
+        Examples: heading(h1 to h6), p, div, ol, ul etc.
+
+        Inline Element: It blocks till its presence
+        Examples: input, span, label, strong, b, img, a, etc.
+    -->
+    <h3 style="background-color: yellow;">H tag Example of block element</h3>
+    <p style="background-color: red;">p tag Example of block element</p>
+    <div style="background-color: teal;">div tag Example of block element</div>
+    <hr>
+    <span style=" background-color: rgb(150, 150, 174);">span tagExample of inline element</span><br>
+
+    <a href="" style="background-color: rgb(189, 132, 132);">a tag Example of inline element</a>
+    <hr>
+    <!--how to make inline element as block or block as inline
+    -to make this possible, we have one property name is display: inline, block, inline-block
+    -->
+    <p style="background-color: red;display: inline;">Block to Inline</p>
+    <span style="background-color: teal;display: block;">Inline to Block</span>
+    <hr>
+    <!--to make any element block to inline, i have recommandation for all to use inline-block kyuki sirf inline likhne se us block ke size(height and width) pe effect aayga-->
+
+    <!--to create a box
+    widht
+    height 
+    border
+    -->
+    <div style="
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+    ">
+        1
+    </div>
+
+    <div style="
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+    ">
+        2
+    </div>
+
+    <div style="
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+    ">
+        3
+    </div>
+    <hr>
+    <hr>
+    <hr>
+
+    <h1>Margin and Padding Example</h1>
+    <!--
+    margin property: space outside the border
+    long way: 
+    margin-left: 10px
+    margin-right: 10px
+    margin-top: 10px
+    margin-bottom: 10px
+
+    shorthand way:
+    margin: top right bottom left
+    Example:
+    margin: 10px 20px 10px 20px
+    margin: 10px 10px 10px 10px
+    -----
+    margin: top-bottom left-right
+    Example:
+    margin: 10px 20px
+    ----
+    margin: top-right-bottom-left
+    Example:
+    margin: 10px
+
+    ===========
+    padding property: space between content and border
+    long way: 
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 10px
+    padding-bottom: 10px
+
+    shorthand way:
+    padding: top right bottom left
+    Example:
+    padding: 10px 20px 10px 20px
+    padding: 10px 10px 10px 10px
+    -----
+    padding: top-bottom left-right
+    Example:
+    padding: 10px 20px
+    ----
+    padding: top-right-bottom-left
+    Example:
+    padding: 10px
+
+    -->
+
+    <!-- to create a box
+    width
+    height
+    border
+    -->
+    <div style="
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    ">
+        Home</div>
+    <hr>
+    <hr>
+    <hr>
+
+    <h1> I and YOU problem example</h1>
+    <!--to create a box
+    widht
+    height
+    border
+    -->
+    <div style="display:flex;
+      border: 2px solid black;
+      height: 500px;
+       width: 100%;  /*whole horizontal width cover */
+        justify-content: center;  /*Centers horizontally   */
+              align-items:center; /*Centers vertically */">
+
+        <div style="
+         width: 180px;
+         height: 200px;
+         border: 1px solid red;
+         text-align: center;
+         padding-bottom: 10px;
+         ">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
+                alt="movie-image" width="100%" height="65%">
+            <h4 style="margin: 5px 0px;">Dr. Strange 2</h4>
+            <p style="margin: 5px 0px;font-size: 11px;">Rating: 4.7</p>
+            <button style="border: none;background-color: skyblue;font-size: 11px;padding: 5px 10px;">Book Now</button>
+        </div>
+
+        <div style="
+    width: 180px;
+    height: 200px;
+    border: 1px solid red;
+    text-align: center;
+    padding-bottom: 10px;
+    ">
+            <img src="https://assetscdn1.paytm.com/images/cinema/bb2--705x750-cbc15240-8a94-11ec-8efd-6d205f33f529.jpg"
+                alt="movie-image" width="100%" height="65%">
+            <h4 style="margin: 5px 0px;">Bhool Bhulaiya2</h4>
+            <p style="margin: 5px 0px;font-size: 11px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem placeat iste quia, deleniti vel minus corrupti nihil maiores distinctio in. Ratione, incidunt?</p>
+            <button style="border: none;background-color: skyblue;font-size: 11px;padding: 5px 10px;">Book Now</button>
+        </div>
+
+        <div style="
+    width: 180px;
+    height: 200px;
+    border: 1px solid red;
+    text-align: center;
+    padding-bottom: 10px;
+    ">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Jayeshbhai-Jordaar---705x750-660c01c0-cf7c-11ec-98b3-41c37f260d1c.jpg"
+                alt="movie-image" width="100%" height="65%">
+            <h4 style="margin: 5px 0px;">Jayeshbhai Jordaa</h4>
+            <p style="margin: 5px 0px;font-size: 11px;">Rating: 4.1</p>
+            <button style="border: none;background-color: skyblue;font-size: 11px;padding: 5px 10px;">Book Now</button>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

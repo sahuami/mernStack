@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pseudo Element Selector Examples</title>
+    <!-- A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s).
+    syntax:
+    selector::pseudo-element {
+    property: value;
+    } -->
+
+
+    <!-- List of pseudo-elements
+    Pseudo-elements defined by a set of CSS specifications include the following:
+
+    ::after, 
+    ::backdrop
+    ::before
+    ::cue
+    ::cue-region
+    ::first-letter
+    ::first-line
+    ::file-selector-button
+    ::grammar-error Experimental
+    ::marker
+    ::part()
+    ::placeholder
+    ::selection
+    ::slotted()
+    ::spelling-error Experimental
+    ::target-text  -->
+
+
+    <style> 
+    p::first-letter {
+    font-size: 55px;
+    }
+
+    p::first-line {
+    color: red;
+    }
+    </style>
+</head>
+
+<body>
+
+    <p>L<span>o</span>rem ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat sapiente provident nobis
+        debitis ratione facilis maxime tenetur neque voluptatum possimus amet placeat iure dolor, deserunt esse ullam
+        dolorem totam perferendis architecto ea porro! Possimus modi alias ex numquam sequi nam dicta illo soluta odit,
+        velit tenetur cum excepturi autem!</p>
+
+</body>
+
+</html>

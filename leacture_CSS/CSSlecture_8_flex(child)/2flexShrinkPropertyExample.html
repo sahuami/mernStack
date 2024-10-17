@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex shrink Property Example</title>
+
+    <style>
+
+        /* shrink: it shrinks the child with according to container width.
+        defualt value: 1(active)
+        note: it doesn't accept any negative value
+        */
+
+        #container{
+            border: 1px solid red;
+            padding: 10px;
+            display: flex;
+        }
+        #container>div{
+            width: 100px;
+            border: 1px solid teal;
+            text-align: center;
+            flex-shrink: 0;
+            flex-grow: 1;
+           
+        }
+        #container>div:nth-child(1){
+            flex-shrink: 2;
+        }
+
+        #container>div:nth-child(2){
+            flex-shrink: 3;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+</body>
+
+</html>

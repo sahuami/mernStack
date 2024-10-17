@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>introduction to animation</title>
+
+    <style>
+         /* initial state */
+ div {
+    height: 100px;
+    animation-name: basic_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    animation-direction: reverse;
+
+    animation-delay: 2s;
+
+    animation-timing-function: ease-out;
+
+}
+
+/* @keyframes basic_animation{
+    from{
+         background-color: pink;
+    }
+    to{
+         background-color: green;
+    }
+} */
+
+@keyframes basic_animation{
+    0%{
+        background-color: pink;
+    }
+    20%{
+        background-color: yellow;
+    }
+    40%{
+      background-color:red ;
+    }
+    60%{
+        background-color: blue;
+    }
+    80%{
+        background-color: maroon;
+    }
+    100%{
+        background-color: green;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+    <!--
+    animation: continously/certain number of time change in the state of an element.
+    -transition is small part of animation
+    -by default animation is also happened once just like transition
+    -once animation gets completed, it comes to the default style/initial style.
+    -->

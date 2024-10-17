@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>introduction to Grid Property</title>
+
+    <!-- Grid Layout: 1. The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. -->
+                 <!-- 2. The Grid layout is a 2-dimensional system in CSS that allows for the creation of complex and responsive web design layouts with consistent results across different browsers. It makes it easier to  build these types of layouts.  -->
+
+   <!-- parent properties: Display, Grid-Template-Columns,Grid-Template-Rows, Grid-Template. Column-Gap, Row-Gap, Grid-Column-Gap. Grid-Row-Gap, Gap, Grid-Gap, Align-Items, Justify-Content, Align-Content, Grid-Auto-Columns, Grid-Auto-Rows, Grid-Auto-Flow -->
+    
+   <!-- child properties: Grid-Column-Start, Grid-Column-End, Grid-Row-Start, Grid-Row-End, Grid-Column, Grid-Row, Grid-Area, Align-Self -->
+   <style>
+        /* grid-template-colums: here, we decide each column width.
+        Exampe: grid-template-colums: firstColumnWidth secondColumnWidth thirdColumnWidth and so on
+        grid-template-colums: 100px 100px 100px 100px
+
+        grid-template-rows: here, we decide each row heigth.
+        Exampe: grid-template-rows: firstRowHeight secondRowHeight thirdRowHeigth and so on
+        grid-template-rows: 100px 100px 100px */
+
+        #container {
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 200px 24% 24% 24%;
+            grid-template-rows: 180px 180px;
+            /* grid-row-gap: 10px;
+            grid-column-gap: 10px; */
+            /* gap: 10px 10px; */
+            gap: 10px;
+        }
+
+        #container>div {
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

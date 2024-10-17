@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Parent: Justify-content property Example</title>
+
+    <style>
+        /* Justify-content: it aligns the child items to x axis(horizontally) 
+ default-value: flex-start/start
+ other values:
+ flex-start/start/left, flex-end/end/right, center, space-between, space-around, space-evenly 
+ */
+        #box {
+            border: 1px solid teal;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        #box>div {
+            width: 50px;
+            height: 30px;
+            background-color: black;
+            border: 2px solid tomato;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+</body>
+
+</html>

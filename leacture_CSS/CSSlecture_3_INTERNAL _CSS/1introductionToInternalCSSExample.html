@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Introduction to Internal CSS</title>
+
+    <style>
+      /*Here you will write internal css*/
+
+      p{
+        background-color: red;
+      }
+      input{
+        background-color: tomato;
+      }
+      div{
+        background-color: yellow;
+      }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--
+        In the case of Inline css, we're having face following issues:
+        1. Maintainability
+        2. Reusability
+        3. Global Styling:
+    -->
+
+    <!-- <p style="background-color: red;font-size: 25px;padding: 10px;color: white;font-style: italic;font-weight: bold;">Hello</p>
+    <p style="background-color: red;font-size: 25px;padding: 10px;color: white;font-style: italic;font-weight: bold;">Ducat</p> -->
+
+    <!--
+        -To solve above problem, we have internal CSS
+        -In the case of Internal Css, We just write html, and css seperatly in the same html file(that's why it is internal css as it is written in html file only)
+        -Q. Where to write?
+        -There is style element inside head element, inside style element you need to write your internal css seperatly.
+        -Q. How to select html element for sytling.
+        -using CSS Selectors: with the help of following we can select  particular style it.
+        -1. type/tag/element selector
+        -2. class selector
+        -3. id selector
+        -4. universal selector
+    -->
+
+    <p>item-1</p>
+    <p>item-2</p>
+
+    <div>i'm div-1</div>
+    <div>i'm div-2</div>
+
+    <input type="text">
+    <input type="email">
+
+    
+</body>
+
+</html>

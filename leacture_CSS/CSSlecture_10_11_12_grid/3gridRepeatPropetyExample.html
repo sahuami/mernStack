@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid Repeat property Example</title>
+
+    <style>
+
+        #father{
+            display: grid;
+            grid-template-columns: 200px repeat(3, 100px);
+            grid-template-rows: repeat(2, 100px) 200px;
+            gap: 10px;
+        }
+       #father>div{
+        background-color: black;
+        border: 2px solid red;
+       }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="father">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+
+</html>
+
+<!--
+repeat(no_of_line, size): using this grid repeat proeprty you can save your self from writing same size of rows and columns againa and again
+Example: 
+grid-template-columns: 100px 100px 100px;
+better solution:
+grid-template-columns: repeat(3, 100px);
+grid-template-rows: 100px 100px;
+better solution:
+ grid-template-rows: repeat(2, 100px);
+
+ it is the better solution if you've same size of rows and column more than one time.
+-->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Parent Propety: Align-Content property example</title>
+
+    <style>
+
+        /* align-content: it aligns the items to y axis, it is similar to justify-content in terms of functionality not in presentation,
+        but there is one hack-in the case of align-content property, you need to take childs items row wise
+        default value:stretch,
+        other values: start, end, center, space-around, space-between, space-evenly
+        */
+
+        #box{
+            padding: 10px;
+            border: 2px solid teal;
+            display: flex;
+            height: 500px;
+            align-content: start;
+            flex-wrap: wrap;
+            align-content: center;
+            gap:10px;
+          
+        }
+        #box>div{
+            width: 100px;
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+       <div>7</div>
+       <div>8</div>
+       <div>9</div>
+       <div>10</div>
+       <div>11</div>
+       <div>12</div>
+       <div>13</div>
+       <div>14</div>
+       <div>15</div>
+       <div>16</div>
+       <div>17</div>
+       <div>18</div>
+       <div>19</div>
+       <div>20</div>
+       <div>21</div>
+       <div>22</div>
+       <div>23</div>
+       <div>24</div>
+       <div>25</div>
+       <div>26</div>
+       <div>27</div>
+       <div>28</div>
+       <div>29</div>
+       <div>30</div>
+    </div>
+    
+</body>
+
+</html>

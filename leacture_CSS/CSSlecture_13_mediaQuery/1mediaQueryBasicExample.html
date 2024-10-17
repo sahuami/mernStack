@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- mediaquery ko use krne ke liye ye "meta" wali line bhot jaruri hai yahi decide krta hai ki screen ke according hamara page ka size kt hoga -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Basic Example</title>
+
+    <!--
+    Media QueryL it is feacture/property of css, which is used to create responsive web pages.
+    -so that you can create user-friendly website.
+    -->
+
+    <style>
+        /* default size: desktop/laptop/any big screen */
+        body {
+            background-color: red;
+        }
+
+        /* medium screen: tablet */
+        @media all and (min-width: 750px) and (max-width: 900px) {
+
+            body {
+                background-color: teal;
+            }
+
+        }
+
+        /* small screen: mobiles */
+        @media all and (max-width: 749px) {
+
+            body {
+                background-color: limegreen;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

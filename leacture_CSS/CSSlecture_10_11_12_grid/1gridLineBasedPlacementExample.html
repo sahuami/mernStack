@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid Line Based Placement Example</title>
+
+    <style>
+
+        #father{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+        #father>div:nth-child(1){
+           background-color: blue;
+           grid-area: 2/1/4/2;
+        }
+        #father>div:nth-child(2){
+            background-color: green;
+        }
+        #father>div:nth-child(3){
+            background-color: yellow    ;
+            grid-area: 1/2/2/4;
+        }
+        #father>div:nth-child(4){
+            background-color: red;
+        }
+        #father>div:nth-child(5){
+            background-color: maroon;
+            grid-area: 3/2/4/4;
+        }
+        #father>div:nth-child(6){
+            background-color: pink;
+            /* grid-area: rowStart/columnStart/rowEnd/columnEnd; */
+            grid-area: 1/1/2/2;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="father">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+
+</html>
+
+<!--
+problem with finding grid-area?
+right now, you've only few childs let's 20, what if you've 1000 childs
+10 cols, 100 rows
+
+We have better solution as compare to previous approach
+-->

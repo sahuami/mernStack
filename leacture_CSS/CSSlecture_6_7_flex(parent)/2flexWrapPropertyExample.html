@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Parent Property: Flex-Wrap Property</title>
+     
+    <style>
+
+        /* flex-wrap: it wraps the childs items to the next line once any child exceeds the conatainer parent width
+        default value: nowrap
+        other values: wrap, wrap-reverse
+        */
+        
+
+        #father{
+           border: 1px solid red;
+           padding: 10px; 
+           display: flex;
+           flex-wrap: wrap;
+           gap: 10px;
+        }
+        
+
+        #father>div{
+            width: 150px;
+            height: 150px;
+            border: 1px solid teal;
+            flex-shrink: 0;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="father">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Parent Propety: Align-items property example</title>
+
+    <style>
+
+        /* align-items: it aligns the items to y axis with some limited functionality as compare to justify-content 
+        default value: stretch,
+        other values: baseline, start, end, center
+        */
+
+        #box{
+            padding: 10px;
+            border: 2px solid teal;
+            display: flex;
+            height: 200px;
+            /* default value: align-items: stretch; */
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        #box>div{
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+</body>
+
+</html>

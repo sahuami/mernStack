@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid Fractional Unit Example</title>
+
+    <style>
+
+        #father{
+            display: grid;
+            height: 500px;
+            border: 2px solid teal;
+            padding: 10px;
+            grid-template-columns: 2fr 1fr 3fr 1fr;
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+       #father>div{
+        background-color: black;
+        border: 2px solid red;
+       }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="father">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+
+</html>
+
+<!--
+fractional unit(fr):
+1fr = 100%
+1fr 1fr = 50% 50%
+1fr 1fr 1fr = 33.33% 33.33% 33.33%
+-->

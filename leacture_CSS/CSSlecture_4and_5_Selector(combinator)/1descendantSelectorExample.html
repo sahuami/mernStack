@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Combinators Introdcution</title>
+</head>
+
+<!--
+    1. A combinator is something that explains the relationship between the selectors
+    2. so that we can use very minimum id and class to make our html code more readable
+    There are four different combinators in CSS:
+
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+-->
+
+
+<style>
+
+    /*descendant selector(space): selector1 selector2 selector3
+
+    in the below example, you're selecting div p descendant
+    */
+    #box p{
+        background-color: red;
+    }
+
+</style>
+
+<body>
+    <div id="box">
+        <p>i'm Pragraph-1</p>
+        <p>i'm Pragraph-2</p>
+        <p>i'm Pragraph-3</p>
+        <div>
+            <p>i'm Pragraph-6</p>
+            <p>i'm Pragraph-7</p>
+            <p>i'm Pragraph-8</p>    
+        </div>
+        <p>i'm Pragraph-4</p>
+        <div>
+            <p>i'm Pragraph-9</p>
+            <p>i'm Pragraph-10</p>
+            <p>i'm Pragraph-11</p>    
+        </div>
+        <p>i'm Pragraph-5</p>
+    </div>
+
+    <div>
+        <p>I'm paragraph-1</p>
+        <p>I'm paragraph-2</p>
+        <p>I'm paragraph-3</p>
+        <p>I'm paragraph-4</p>
+        <p>I'm paragraph-5</p>
+    </div>
+    
+
+</body>
+
+</html>

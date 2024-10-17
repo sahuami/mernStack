@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Before the Flexbox Layout module, there were four layout modes:
+
+   1. Block, for sections in a webpage
+   2. Inline, for text
+   3. Table, for two-dimensional table data
+   4. Positioned, for explicit position of an element
+    The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. -->
+
+<!-- Parent Element (Container/properties)
+    1.flex-direction
+    2.flex-wrap
+    3. flex-flow
+    4.justify-content
+    5. align-items
+    6.align-content
+    7.flex-flow: The flex-flow property is a shorthand property for setting both the (flex-direction and flex-wrap) properties.
+example: 
+.flex-container {
+display: flex;
+flex-flow: row wrap;
+}  -->
+
+<!-- child property
+    1. order
+    2. flex-grow
+    3. flex-shrink
+    4. flex-basis
+    5. flex
+    6.align-self
+    7 flex: The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
+      example: style="flex: 0 0 200px" -->
+
+
+<!-- ye sari property ko use krne se phele display flex likhna jaruri hai tabhi hum sari property use kr skte hai -->
+
+<head>
+    <title>Flex Parent Property: Flex-Direction Property</title>
+
+
+
+
+    <style>
+        /* flex-direction: it aligns the childs item either in x direction(row wise) or in y direction (column wise) 
+        defaul value flex-direction: row
+        other values: column, row-reverse, column-reverse
+        */
+
+        #father {
+            border: 1px solid red;
+            padding: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 200px;
+        }
+
+        #father>div {
+            width: 50px;
+            height: 30px;
+            border: 1px solid teal;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="father">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid Real Life Example</title>
+
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+        #box{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 70px repeat(2, 250px) 200px;
+            gap: 10px;
+            grid-template-areas:
+            "nav nav nav nav"
+            "box1 box2 sidebar sidebar"
+            "box3 box4 sidebar sidebar"
+            "footer footer footer footer";
+            margin: 5px;
+        }
+
+        #box>div{
+            border: 2px solid red;
+        }
+
+        #box>div:nth-child(1){
+            grid-area: nav;
+        }
+        #box>div:nth-child(2){
+            grid-area: box1;
+        }
+        #box>div:nth-child(3){
+            grid-area: box2;
+        }
+        #box>div:nth-child(4){
+            grid-area: sidebar;
+        }
+        #box>div:nth-child(5){
+            grid-area: box3;
+        }
+        #box>div:nth-child(6){
+            grid-area: box4;
+        }
+        #box>div:nth-child(7){
+            grid-area: footer;
+        }
+
+        #nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: rgb(201, 233, 233);
+        }
+        #nav>img{
+            width: 100px;
+            margin-left: 20px;
+        }
+        #menu-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+        }
+        #menu-item>a{
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="box">
+        <div id="nav">
+            <img src="https://www.ducatindia.com/_next/image?url=%2Fstatic%2Fimages%2Flogo.png&w=128&q=75" alt="Logo">
+            <div id="menu-item">
+                <a href="">Home</a>
+                <a href="">Product</a>
+                <a href="">Courses</a>
+                <a href="">About</a>
+                <a href="">Login</a>
+            </div>
+        </div>
+        <div>box 1</div>
+        <div>box 2</div>
+        <div>sidebar</div>
+        <div>box 3</div>
+        <div>box 4</div>
+        <div>footer</div>
+    </div>
+    
+</body>
+
+</html>

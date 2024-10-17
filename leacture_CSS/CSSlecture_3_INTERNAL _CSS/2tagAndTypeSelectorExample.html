@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tag and Type Selector Example</title>
+
+    <style>
+
+        p{
+            background-color: red;
+        }
+        input{
+            padding:10px;
+            margin-top: 10px;
+        }
+        a{
+            border: 2px solid red;
+            padding: 10px;
+        }
+        img{
+            margin-top: 20px;
+        }
+
+        input[type="email"], a[href="https://www.flipkart.com/"]{
+            background-color: red;
+        }
+
+        img[src="https://tse2.mm.bing.net/th?id=OIP.8qneRBur6fxybwsuYZ-7agHaEK&pid=Api&P=0&h=180"]{
+            border: 2px solid red;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--
+    tag selector: 
+    -with help of tag/element name, you can select particular element and style it
+    -----
+    type(attribute) selector: 
+    -with help of tag/element attribute, you can select particular element and style it
+    -->
+
+    <p>item-1</p>
+    <p>item-2</p>
+    <p>item-3</p>
+
+    <input type="text">
+    <input type="email">
+    <input type="number">
+    <input type="text">
+    <br>
+
+    <a href="https://www.flipkart.com/">Flipkart</a>
+    <a href="https://www.amazon.in/">Amazon</a>
+    <a href="https://ducatindia.com/">Ducat</a>
+
+    <br>
+
+    <img src="https://tse2.mm.bing.net/th?id=OIP.8qneRBur6fxybwsuYZ-7agHaEK&pid=Api&P=0&h=180" width="150px">
+    <br>
+    <img src="https://tse3.mm.bing.net/th?id=OIP.bPBCgvp9N0SUbVYJnBg2IQHaEo&pid=Api&P=0&h=180" width="150px">
+    <br>
+
+    <div>i'm div -1</div>
+    <div>i'm div -2</div>
+    <div>i'm div -3</div>
+    <div>i'm div -4</div>
+
+
+</body>
+
+</html>

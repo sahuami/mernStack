@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>General/All Sibling Selector(~)</title>
+  
+
+    <style>
+
+      #box>p~p{
+        background-color: red;
+      }
+       /* #box~div{
+        background-color: yellow;
+      } */
+      div~div{
+        background-color: yellow;
+      } 
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box">
+        <p>i'm Pragraph-1</p>
+        <p>i'm Pragraph-2</p>
+        <p>i'm Pragraph-3</p>
+        <div>
+            <p>i'm Pragraph-6</p>
+            <p>i'm Pragraph-7</p>
+            <p>i'm Pragraph-8</p>    
+        </div>
+        <p>i'm Pragraph-4</p>
+        <div>
+            <p>i'm Pragraph-9</p>
+            <p>i'm Pragraph-10</p>
+            <p>i'm Pragraph-11</p>    
+        </div>
+        <p>i'm Pragraph-5</p>
+    </div>
+
+    <div>
+        <p>I'm paragraph-1</p>
+        <p>I'm paragraph-2</p>
+        <p>I'm paragraph-3</p>
+        <p>I'm paragraph-4</p>
+        <p>I'm paragraph-5</p>
+    </div>
+    
+    
+</body>
+
+</html>

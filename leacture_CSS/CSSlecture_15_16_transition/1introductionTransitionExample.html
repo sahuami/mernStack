@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Introduction to Transition</title>
+
+    <style>
+        /* initial state */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* long way
+            transition-property: width;
+            transition-duration: 4s;
+            transition-delay: 2s;
+            transition-timing-function: ease-out;  
+           
+            shorthand way
+             transition: property duration delay timing-function;
+            */
+            transition: all 3s 1s ease-in-out;
+
+        }
+
+        /* final state */
+        div:hover {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(52, 17, 128);
+            border-radius: 50%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>

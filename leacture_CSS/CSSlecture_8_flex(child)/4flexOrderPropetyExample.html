@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Grow Property Example</title>
+
+    <style>
+
+        /* order: here, you can change the order of any childs.
+        defualt value: 0: all childs will appear the web page as they are aligned in html page.
+        note: it can accept negative value
+        */
+
+        #container{
+            border: 1px solid red;
+            padding: 10px;
+            display: flex;
+        }
+        #container>div{
+            width: 40px;
+            border: 1px solid teal;
+            text-align: center;
+            flex-shrink: 0;
+           
+        }
+        #container>div:nth-child(6){
+            order: -1;
+        }
+        #container>div:nth-child(5){
+            order: -3;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+       <div>7</div>
+    </div>
+    
+</body>
+
+</html>

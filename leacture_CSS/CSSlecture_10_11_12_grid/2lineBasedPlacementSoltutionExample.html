@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Better Solution for line based placement</title>
+
+    <style>
+
+        #father{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            gap: 10px;
+
+            grid-template-areas: 
+            "bl bl ylw"
+            "bl bl ylw"
+            "rd mrn pnk"
+            "grn grn grn";
+        }
+        #father>div:nth-child(1){
+           background-color: blue;
+           grid-area: bl;
+        }
+        #father>div:nth-child(2){
+            background-color: green;
+            grid-area: grn;
+        }
+        #father>div:nth-child(3){
+            background-color: yellow;
+            grid-area: ylw;
+        }
+        #father>div:nth-child(4){
+            background-color: red;
+            grid-area: rd;
+        }
+        #father>div:nth-child(5){
+            background-color: maroon;
+            grid-area: mrn;
+        }
+        #father>div:nth-child(6){
+            background-color: pink;
+            grid-area: pnk;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="father">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+
+</html>
